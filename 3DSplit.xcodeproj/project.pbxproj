@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3697B979279E8ADB00F212D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697B978279E8ADB00F212D9 /* AppDelegate.m */; };
+		3697B97C279E8ADB00F212D9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697B97B279E8ADB00F212D9 /* SceneDelegate.m */; };
+		3697B97F279E8ADB00F212D9 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3697B97E279E8ADB00F212D9 /* ViewController.mm */; };
+		3697B982279E8ADB00F212D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3697B980279E8ADB00F212D9 /* Main.storyboard */; };
+		3697B984279E8ADC00F212D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3697B983279E8ADC00F212D9 /* Assets.xcassets */; };
+		3697B987279E8ADC00F212D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3697B985279E8ADC00F212D9 /* LaunchScreen.storyboard */; };
+		3697B98A279E8ADC00F212D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697B989279E8ADC00F212D9 /* main.m */; };
+		3697B9AE279E977500F212D9 /* RenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697B9AD279E977500F212D9 /* RenderView.m */; };
+		3697B9B3279E97D200F212D9 /* SplitAlgorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3697B9B2279E97D200F212D9 /* SplitAlgorithm.mm */; };
+		36E12F6227AC341700BE3358 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12F6127AC341700BE3358 /* SceneKit.framework */; };
+		36E12F6427AC343400BE3358 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12F6327AC343400BE3358 /* ModelIO.framework */; };
+		36E12FB527AC403C00BE3358 /* ship.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 36E12FB227AC403C00BE3358 /* ship.mtl */; };
+		36E12FB627AC403C00BE3358 /* ship.obj in Resources */ = {isa = PBXBuildFile; fileRef = 36E12FB327AC403C00BE3358 /* ship.obj */; };
+		36E12FB727AC403C00BE3358 /* diffuseColor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36E12FB427AC403C00BE3358 /* diffuseColor.jpg */; };
+		36E12FBA27ACA71700BE3358 /* MDLMaterial+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E12FB927ACA71700BE3358 /* MDLMaterial+Properties.m */; };
+		36E12FC127AE92F000BE3358 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E12FBF27AE92F000BE3358 /* MBProgressHUD.m */; };
+		36E12FCF27AF8D2500BE3358 /* libpng.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC227AF8D2500BE3358 /* libpng.a.xcframework */; };
+		36E12FD027AF8D2500BE3358 /* TBB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC327AF8D2500BE3358 /* TBB.xcframework */; };
+		36E12FD127AF8D2500BE3358 /* Assimp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC427AF8D2500BE3358 /* Assimp.xcframework */; };
+		36E12FD227AF8D2500BE3358 /* libOpen3D_3rdparty_qhull_r.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC527AF8D2500BE3358 /* libOpen3D_3rdparty_qhull_r.a.xcframework */; };
+		36E12FD327AF8D2500BE3358 /* libOpen3D.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC627AF8D2500BE3358 /* libOpen3D.a.xcframework */; };
+		36E12FD427AF8D2500BE3358 /* pybind.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC727AF8D2500BE3358 /* pybind.a.xcframework */; };
+		36E12FD527AF8D2500BE3358 /* libOpen3D_3rdparty_rply.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC827AF8D2500BE3358 /* libOpen3D_3rdparty_rply.a.xcframework */; };
+		36E12FD627AF8D2500BE3358 /* JPEG.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FC927AF8D2500BE3358 /* JPEG.xcframework */; };
+		36E12FD727AF8D2500BE3358 /* IrrXML.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FCA27AF8D2500BE3358 /* IrrXML.xcframework */; };
+		36E12FD827AF8D2500BE3358 /* libOpen3D_3rdparty_jsoncpp.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FCB27AF8D2500BE3358 /* libOpen3D_3rdparty_jsoncpp.a.xcframework */; };
+		36E12FD927AF8D2500BE3358 /* libOpen3D_3rdparty_lzf.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FCC27AF8D2500BE3358 /* libOpen3D_3rdparty_lzf.a.xcframework */; };
+		36E12FDA27AF8D2500BE3358 /* Faiss.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FCD27AF8D2500BE3358 /* Faiss.xcframework */; };
+		36E12FDB27AF8D2500BE3358 /* libOpen3D_3rdparty_qhullcpp.a.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FCE27AF8D2500BE3358 /* libOpen3D_3rdparty_qhullcpp.a.xcframework */; };
+		36E12FDD27AF8D6100BE3358 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E12FDC27AF8D6100BE3358 /* libz.tbd */; };
+		36E12FE027AFABED00BE3358 /* SplitDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E12FDF27AFABED00BE3358 /* SplitDisplayController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3697B974279E8ADB00F212D9 /* 3DSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3697B977279E8ADB00F212D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3697B978279E8ADB00F212D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3697B97A279E8ADB00F212D9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3697B97B279E8ADB00F212D9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3697B97D279E8ADB00F212D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3697B97E279E8ADB00F212D9 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		3697B981279E8ADB00F212D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3697B983279E8ADC00F212D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3697B986279E8ADC00F212D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3697B988279E8ADC00F212D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3697B989279E8ADC00F212D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3697B9AC279E977500F212D9 /* RenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderView.h; sourceTree = "<group>"; };
+		3697B9AD279E977500F212D9 /* RenderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenderView.m; sourceTree = "<group>"; };
+		3697B9B1279E97D200F212D9 /* SplitAlgorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitAlgorithm.h; sourceTree = "<group>"; };
+		3697B9B2279E97D200F212D9 /* SplitAlgorithm.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SplitAlgorithm.mm; sourceTree = "<group>"; };
+		36E12F6127AC341700BE3358 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		36E12F6327AC343400BE3358 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		36E12FB227AC403C00BE3358 /* ship.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ship.mtl; sourceTree = "<group>"; };
+		36E12FB327AC403C00BE3358 /* ship.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ship.obj; sourceTree = "<group>"; };
+		36E12FB427AC403C00BE3358 /* diffuseColor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diffuseColor.jpg; sourceTree = "<group>"; };
+		36E12FB827ACA71700BE3358 /* MDLMaterial+Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDLMaterial+Properties.h"; sourceTree = "<group>"; };
+		36E12FB927ACA71700BE3358 /* MDLMaterial+Properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MDLMaterial+Properties.m"; sourceTree = "<group>"; };
+		36E12FBF27AE92F000BE3358 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		36E12FC027AE92F000BE3358 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		36E12FC227AF8D2500BE3358 /* libpng.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libpng.a.xcframework; sourceTree = "<group>"; };
+		36E12FC327AF8D2500BE3358 /* TBB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TBB.xcframework; sourceTree = "<group>"; };
+		36E12FC427AF8D2500BE3358 /* Assimp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Assimp.xcframework; sourceTree = "<group>"; };
+		36E12FC527AF8D2500BE3358 /* libOpen3D_3rdparty_qhull_r.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libOpen3D_3rdparty_qhull_r.a.xcframework; sourceTree = "<group>"; };
+		36E12FC627AF8D2500BE3358 /* libOpen3D.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libOpen3D.a.xcframework; sourceTree = "<group>"; };
+		36E12FC727AF8D2500BE3358 /* pybind.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = pybind.a.xcframework; sourceTree = "<group>"; };
+		36E12FC827AF8D2500BE3358 /* libOpen3D_3rdparty_rply.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libOpen3D_3rdparty_rply.a.xcframework; sourceTree = "<group>"; };
+		36E12FC927AF8D2500BE3358 /* JPEG.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JPEG.xcframework; sourceTree = "<group>"; };
+		36E12FCA27AF8D2500BE3358 /* IrrXML.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IrrXML.xcframework; sourceTree = "<group>"; };
+		36E12FCB27AF8D2500BE3358 /* libOpen3D_3rdparty_jsoncpp.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libOpen3D_3rdparty_jsoncpp.a.xcframework; sourceTree = "<group>"; };
+		36E12FCC27AF8D2500BE3358 /* libOpen3D_3rdparty_lzf.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libOpen3D_3rdparty_lzf.a.xcframework; sourceTree = "<group>"; };
+		36E12FCD27AF8D2500BE3358 /* Faiss.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Faiss.xcframework; sourceTree = "<group>"; };
+		36E12FCE27AF8D2500BE3358 /* libOpen3D_3rdparty_qhullcpp.a.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libOpen3D_3rdparty_qhullcpp.a.xcframework; sourceTree = "<group>"; };
+		36E12FDC27AF8D6100BE3358 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		36E12FDE27AFABED00BE3358 /* SplitDisplayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitDisplayController.h; sourceTree = "<group>"; };
+		36E12FDF27AFABED00BE3358 /* SplitDisplayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitDisplayController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3697B971279E8ADB00F212D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E12FDD27AF8D6100BE3358 /* libz.tbd in Frameworks */,
+				36E12FDB27AF8D2500BE3358 /* libOpen3D_3rdparty_qhullcpp.a.xcframework in Frameworks */,
+				36E12FD427AF8D2500BE3358 /* pybind.a.xcframework in Frameworks */,
+				36E12FD627AF8D2500BE3358 /* JPEG.xcframework in Frameworks */,
+				36E12F6427AC343400BE3358 /* ModelIO.framework in Frameworks */,
+				36E12FD327AF8D2500BE3358 /* libOpen3D.a.xcframework in Frameworks */,
+				36E12FD927AF8D2500BE3358 /* libOpen3D_3rdparty_lzf.a.xcframework in Frameworks */,
+				36E12FD527AF8D2500BE3358 /* libOpen3D_3rdparty_rply.a.xcframework in Frameworks */,
+				36E12FDA27AF8D2500BE3358 /* Faiss.xcframework in Frameworks */,
+				36E12F6227AC341700BE3358 /* SceneKit.framework in Frameworks */,
+				36E12FD027AF8D2500BE3358 /* TBB.xcframework in Frameworks */,
+				36E12FCF27AF8D2500BE3358 /* libpng.a.xcframework in Frameworks */,
+				36E12FD227AF8D2500BE3358 /* libOpen3D_3rdparty_qhull_r.a.xcframework in Frameworks */,
+				36E12FD127AF8D2500BE3358 /* Assimp.xcframework in Frameworks */,
+				36E12FD827AF8D2500BE3358 /* libOpen3D_3rdparty_jsoncpp.a.xcframework in Frameworks */,
+				36E12FD727AF8D2500BE3358 /* IrrXML.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		368D54B627B0FC6000326876 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				3697B9AC279E977500F212D9 /* RenderView.h */,
+				3697B9AD279E977500F212D9 /* RenderView.m */,
+				36E12FB827ACA71700BE3358 /* MDLMaterial+Properties.h */,
+				36E12FB927ACA71700BE3358 /* MDLMaterial+Properties.m */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		368D54B727B0FC6900326876 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				3697B9B1279E97D200F212D9 /* SplitAlgorithm.h */,
+				3697B9B2279E97D200F212D9 /* SplitAlgorithm.mm */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		3697B96B279E8ADB00F212D9 = {
+			isa = PBXGroup;
+			children = (
+				3697B976279E8ADB00F212D9 /* 3DSplit */,
+				3697B975279E8ADB00F212D9 /* Products */,
+				36E12F6027AC341700BE3358 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3697B975279E8ADB00F212D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3697B974279E8ADB00F212D9 /* 3DSplit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3697B976279E8ADB00F212D9 /* 3DSplit */ = {
+			isa = PBXGroup;
+			children = (
+				36E12FBD27AE92CD00BE3358 /* 3rd */,
+				36E12F5F27AC314C00BE3358 /* 3DModel */,
+				3697B9AF279E977C00F212D9 /* Module */,
+				3697B977279E8ADB00F212D9 /* AppDelegate.h */,
+				3697B978279E8ADB00F212D9 /* AppDelegate.m */,
+				3697B97A279E8ADB00F212D9 /* SceneDelegate.h */,
+				3697B97B279E8ADB00F212D9 /* SceneDelegate.m */,
+				3697B980279E8ADB00F212D9 /* Main.storyboard */,
+				3697B983279E8ADC00F212D9 /* Assets.xcassets */,
+				3697B985279E8ADC00F212D9 /* LaunchScreen.storyboard */,
+				3697B988279E8ADC00F212D9 /* Info.plist */,
+				3697B989279E8ADC00F212D9 /* main.m */,
+			);
+			path = 3DSplit;
+			sourceTree = "<group>";
+		};
+		3697B990279E8AE200F212D9 /* Open3d */ = {
+			isa = PBXGroup;
+			children = (
+				36E12FC427AF8D2500BE3358 /* Assimp.xcframework */,
+				36E12FCD27AF8D2500BE3358 /* Faiss.xcframework */,
+				36E12FCA27AF8D2500BE3358 /* IrrXML.xcframework */,
+				36E12FC927AF8D2500BE3358 /* JPEG.xcframework */,
+				36E12FCB27AF8D2500BE3358 /* libOpen3D_3rdparty_jsoncpp.a.xcframework */,
+				36E12FCC27AF8D2500BE3358 /* libOpen3D_3rdparty_lzf.a.xcframework */,
+				36E12FC527AF8D2500BE3358 /* libOpen3D_3rdparty_qhull_r.a.xcframework */,
+				36E12FCE27AF8D2500BE3358 /* libOpen3D_3rdparty_qhullcpp.a.xcframework */,
+				36E12FC827AF8D2500BE3358 /* libOpen3D_3rdparty_rply.a.xcframework */,
+				36E12FC627AF8D2500BE3358 /* libOpen3D.a.xcframework */,
+				36E12FC227AF8D2500BE3358 /* libpng.a.xcframework */,
+				36E12FC727AF8D2500BE3358 /* pybind.a.xcframework */,
+				36E12FC327AF8D2500BE3358 /* TBB.xcframework */,
+			);
+			path = Open3d;
+			sourceTree = "<group>";
+		};
+		3697B9AF279E977C00F212D9 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				368D54B727B0FC6900326876 /* Algorithm */,
+				368D54B627B0FC6000326876 /* Render */,
+				3697B97D279E8ADB00F212D9 /* ViewController.h */,
+				3697B97E279E8ADB00F212D9 /* ViewController.mm */,
+				36E12FDE27AFABED00BE3358 /* SplitDisplayController.h */,
+				36E12FDF27AFABED00BE3358 /* SplitDisplayController.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		36E12F5F27AC314C00BE3358 /* 3DModel */ = {
+			isa = PBXGroup;
+			children = (
+				36E12FB127AC403300BE3358 /* ship */,
+			);
+			path = 3DModel;
+			sourceTree = "<group>";
+		};
+		36E12F6027AC341700BE3358 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36E12FDC27AF8D6100BE3358 /* libz.tbd */,
+				36E12F6327AC343400BE3358 /* ModelIO.framework */,
+				36E12F6127AC341700BE3358 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36E12FB127AC403300BE3358 /* ship */ = {
+			isa = PBXGroup;
+			children = (
+				36E12FB427AC403C00BE3358 /* diffuseColor.jpg */,
+				36E12FB227AC403C00BE3358 /* ship.mtl */,
+				36E12FB327AC403C00BE3358 /* ship.obj */,
+			);
+			path = ship;
+			sourceTree = "<group>";
+		};
+		36E12FBD27AE92CD00BE3358 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				3697B990279E8AE200F212D9 /* Open3d */,
+				36E12FBE27AE92DB00BE3358 /* MBProgressHUD */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		36E12FBE27AE92DB00BE3358 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				36E12FC027AE92F000BE3358 /* MBProgressHUD.h */,
+				36E12FBF27AE92F000BE3358 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3697B973279E8ADB00F212D9 /* 3DSplit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3697B98D279E8ADC00F212D9 /* Build configuration list for PBXNativeTarget "3DSplit" */;
+			buildPhases = (
+				3697B970279E8ADB00F212D9 /* Sources */,
+				3697B971279E8ADB00F212D9 /* Frameworks */,
+				3697B972279E8ADB00F212D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3DSplit;
+			productName = 3DSplit;
+			productReference = 3697B974279E8ADB00F212D9 /* 3DSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3697B96C279E8ADB00F212D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					3697B973279E8ADB00F212D9 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 3697B96F279E8ADB00F212D9 /* Build configuration list for PBXProject "3DSplit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3697B96B279E8ADB00F212D9;
+			productRefGroup = 3697B975279E8ADB00F212D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3697B973279E8ADB00F212D9 /* 3DSplit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3697B972279E8ADB00F212D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3697B987279E8ADC00F212D9 /* LaunchScreen.storyboard in Resources */,
+				36E12FB627AC403C00BE3358 /* ship.obj in Resources */,
+				36E12FB727AC403C00BE3358 /* diffuseColor.jpg in Resources */,
+				3697B984279E8ADC00F212D9 /* Assets.xcassets in Resources */,
+				3697B982279E8ADB00F212D9 /* Main.storyboard in Resources */,
+				36E12FB527AC403C00BE3358 /* ship.mtl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3697B970279E8ADB00F212D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3697B9B3279E97D200F212D9 /* SplitAlgorithm.mm in Sources */,
+				3697B97F279E8ADB00F212D9 /* ViewController.mm in Sources */,
+				3697B9AE279E977500F212D9 /* RenderView.m in Sources */,
+				36E12FE027AFABED00BE3358 /* SplitDisplayController.m in Sources */,
+				3697B979279E8ADB00F212D9 /* AppDelegate.m in Sources */,
+				36E12FBA27ACA71700BE3358 /* MDLMaterial+Properties.m in Sources */,
+				3697B98A279E8ADC00F212D9 /* main.m in Sources */,
+				3697B97C279E8ADB00F212D9 /* SceneDelegate.m in Sources */,
+				36E12FC127AE92F000BE3358 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3697B980279E8ADB00F212D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3697B981279E8ADB00F212D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3697B985279E8ADC00F212D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3697B986279E8ADC00F212D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3697B98B279E8ADC00F212D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3697B98C279E8ADC00F212D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3697B98E279E8ADC00F212D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F9E6VPNRYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3DSplit/3rd/Open3d/libOpen3D.a.xcframework/ios-arm64/Headers/open3d/3rdparty\"";
+				INFOPLIST_FILE = 3DSplit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaoji.-DSplit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3697B98F279E8ADC00F212D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F9E6VPNRYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/3DSplit/3rd/Open3d/libOpen3D.a.xcframework/ios-arm64/Headers/open3d/3rdparty\"";
+				INFOPLIST_FILE = 3DSplit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaoji.-DSplit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3697B96F279E8ADB00F212D9 /* Build configuration list for PBXProject "3DSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3697B98B279E8ADC00F212D9 /* Debug */,
+				3697B98C279E8ADC00F212D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3697B98D279E8ADC00F212D9 /* Build configuration list for PBXNativeTarget "3DSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3697B98E279E8ADC00F212D9 /* Debug */,
+				3697B98F279E8ADC00F212D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3697B96C279E8ADB00F212D9 /* Project object */;
+}
