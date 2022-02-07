@@ -41,7 +41,7 @@ $ Xcode 13.0
 ## 调试
 ```bash
 $ git clone https://github.com/LiuKaoji/3DSplit.git
-$ 下载附件open3d XCframework 放置工程目录
+$ 下载该github项目Release中附件open3d XCframework 放置工程目录
 $ ...
 ```
 
