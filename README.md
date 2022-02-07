@@ -1,4 +1,7 @@
 ## 3DSplit
+![platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)  
+
+![preview](https://github.com/LiuKaoji/3DSplit/blob/main/screenshot.gif)
 
 ## 简介
 基于Open3D对 obj模型进行拆分, 并保留原始UV坐标 
