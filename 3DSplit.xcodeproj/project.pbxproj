@@ -151,7 +151,7 @@
 		3697B976279E8ADB00F212D9 /* 3DSplit */ = {
 			isa = PBXGroup;
 			children = (
-				36E12FBD27AE92CD00BE3358 /* 3rd */,
+				36E12FBD27AE92CD00BE3358 /* 3rdParty */,
 				36E12F5F27AC314C00BE3358 /* 3DModel */,
 				3697B9AF279E977C00F212D9 /* Module */,
 				3697B977279E8ADB00F212D9 /* AppDelegate.h */,
@@ -228,13 +228,13 @@
 			path = ship;
 			sourceTree = "<group>";
 		};
-		36E12FBD27AE92CD00BE3358 /* 3rd */ = {
+		36E12FBD27AE92CD00BE3358 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
 				3697B990279E8AE200F212D9 /* Open3d */,
 				36E12FBE27AE92DB00BE3358 /* MBProgressHUD */,
 			);
-			path = 3rd;
+			path = 3rdParty;
 			sourceTree = "<group>";
 		};
 		36E12FBE27AE92DB00BE3358 /* MBProgressHUD */ = {
